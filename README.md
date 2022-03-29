@@ -1,18 +1,16 @@
 # Self Checkout Machine App
-## framework: .NET 6.0
-## database: MSSQL
+### framework: .NET 6.0
+### database: MSSQL
+
+### 1. Seed database(Package manager console):
+
+	 update-database
+	 
+### 2.  Run the app from root folder
+	dotnet run
 
 
-## Run (from root folder)
-
-	Seed database(Package manager console):
-
-		- update-database
-
-	- dotnet run
-
-
-## Endpoints
+### Endpoints
 
 	POST Stock: https://localhost:7000/api/v1/Stock
 
