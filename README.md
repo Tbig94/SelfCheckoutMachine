@@ -2,6 +2,11 @@
 ### framework: .NET 6.0
 ### database: MSSQL
 
+### Packages
+	Microsoft.EntityFrameworkCore
+	Microsoft.EntityFrameworkCore.SqlServer
+	Microsoft.EntityFrameworkCore.Tools
+
 ### 1. Seed database(Package manager console):
 
 	 update-database
