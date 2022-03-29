@@ -23,10 +23,8 @@ namespace SelfCheckoutMachine.Controllers
         // Loading the machine with currencies
         [HttpPost]
         [Route("/api/v1/Stock")]
-        public IEnumerable<Currency> LoadMachine(List<Currency> currencies)  // List<Currency> currencies
+        public IEnumerable<Currency> LoadMachine(List<Currency> currencies)
         {
-            // !!!!! Legyen validáció (csak számok lehetnek(Value, Amount), csak létező currencyk lehetne(Value)
-            // !!!!! Legyen status code hiba esetén
             // when adding currency to the machine, the database will be updated with the amout of currencies
             foreach (var currency in currencies)
             {
@@ -81,8 +79,8 @@ namespace SelfCheckoutMachine.Controllers
             IEnumerable<Currency> changeCurrencies = Enumerable.Empty<Currency>();
             while (changeSum > 0)
             {
+                // finding the highest currency in the register
                 int maxInRegister = 0;
-
                 try
                 {
                     maxInRegister = (from cur in currenciesFromDb
@@ -101,9 +99,9 @@ namespace SelfCheckoutMachine.Controllers
                     Console.WriteLine("ERROR | NOT ENOUGH CURRENCY!");
                     return null;
                 }
-
             }
 
+            // adding the change currencies to a list, then update a database (IN PROGRESS!)
             Console.WriteLine("change currencies list");
             foreach (var currency in changeCurrencies)
             {

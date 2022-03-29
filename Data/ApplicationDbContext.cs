@@ -27,7 +27,7 @@ namespace SelfCheckoutMachine.Data
 
         public DbSet<Currency> Currencies { get; set; }
 
-        // Seed database with every type of currency
+        // Seed database with every type of currency (amount is 0)
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Currency>().HasData(currenciesInit);

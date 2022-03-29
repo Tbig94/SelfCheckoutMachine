@@ -7,11 +7,13 @@
 	Microsoft.EntityFrameworkCore.SqlServer
 	Microsoft.EntityFrameworkCore.Tools
 
-### 1. Seed database(Package manager console):
+### 1. Set the connection string in appsettings.json ("DefaultConnection")
+
+### 2. Seed database(Package manager console):
 
 	 update-database
 	 
-### 2.  Run the app from root folder
+### 3. Run the app from root folder
 	dotnet run
 
 
