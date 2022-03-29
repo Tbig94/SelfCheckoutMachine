@@ -11,9 +11,6 @@
 
 
 ### Endpoints
-
-	POST Stock: https://localhost:7000/api/v1/Stock
-
-	GET Stock: https://localhost:7000/api/v1/Stock
-
-	POST Checkout: https://localhost:7000/api/v1/Checkout
+- #### [POST Stock](https://localhost:7000/api/v1/Stock)
+- #### [GET Stock](https://localhost:7000/api/v1/Stock)
+- #### [POST Checkout](https://localhost:7000/api/v1/Checkout)
